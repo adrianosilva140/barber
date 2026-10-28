@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Oak &amp; Iron Barbershop — McKinney, Texas (fictional portfolio project)</title>
+  <meta name="description" content="Portfolio design project: a fictional barbershop in McKinney, Texas. Not a real business.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- HEADER: stays at the top while scrolling, so "Book" is always reachable -->
+  <header class="top">
+    <div class="bar">
+      <a class="brand" href="#top">The Oak <span>&amp;</span> Iron</a>
+      <a class="btn btn-sm" href="#book" aria-label="Book an appointment">Book<span class="long"> an appointment</span></a>
+      <nav aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#shop">The shop</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Barbershop · McKinney, Texas</p>
+        <h1 id="hero-title">Haircuts and shaves, by appointment.</h1>
+        <p class="lead">
+          Each visit is booked with one barber for a set time, so there is room
+          for a short consultation, the work itself and a clean finish. Most
+          appointments run forty minutes. Choose a service, pick a slot and
+          arrive when it starts.
+        </p>
+        <p class="actions">
+          <a class="btn" href="#book">Book an appointment</a>
+          <a class="textlink" href="#services">See services and prices</a>
+        </p>
+      </div>
+
+      <!--
+        PHOTO SLOTS (hero and gallery): to use a photo you are licensed to use,
+        replace the placeholder with, for example:
+          <div class="slot slot-tall has-img"><img src="your-photo.jpg" alt="Describe the photo"></div>
+        Use photos with the same lighting and colour so the page feels like one set.
+      -->
+      <div class="slot slot-tall" role="img" aria-label="Photo placeholder: the shop floor">
+        <span class="slot-label"><strong>Photo slot</strong>Main photo: the shop floor</span>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="services-intro">
+        <h2 id="services-title">Services</h2>
+        <p>
+          Every service has a set time and a price listed up front. Open any
+          service to see exactly what is included.
+        </p>
+        <p class="note">Services, times and prices are fictional examples for a design portfolio.</p>
+      </div>
+
+      <ul class="menu">
+        <li class="reveal">
+          <details name="service">
+            <summary>
+              <span class="row"><span class="name">Haircut</span><span class="dots" aria-hidden="true"></span><span class="time">40 min</span><span class="price">$38</span></span>
+              <span class="desc">Consultation, shampoo, scissor or clipper cut, neck shave and styling.</span>
+              <span class="more">What’s included</span>
+            </summary>
+            <div class="inc">
+              <ul>
+                <li>A short consultation at the chair before any cutting</li>
+                <li>Shampoo and towel dry</li>
+                <li>Cut with scissors, clippers or both</li>
+                <li>Neck shave and light styling product</li>
+              </ul>
+              <p class="inc-meta">About 40 minutes · <a href="#book">Book this service</a></p>
+            </div>
+          </details>
+        </li>
+        <li class="reveal">
+          <details name="service">
+            <summary>
+              <span class="row"><span class="name">Skin fade</span><span class="dots" aria-hidden="true"></span><span class="time">40 min</span><span class="price">$42</span></span>
+              <span class="desc">Clipper fade down to the skin, blended into the length on top, with neck shave and styling.</span>
+              <span class="more">What’s included</span>
+            </summary>
+            <div class="inc">
+              <ul>
+                <li>Consultation on fade height and the length left on top</li>
+                <li>Fade taken down to bare skin and blended</li>
+                <li>Top shaped with scissors or clippers</li>
+                <li>Neck shave and light styling product</li>
+              </ul>
+              <p class="inc-meta">About 40 minutes · <a href="#book">Book this service</a></p>
+            </div>
+          </details>
+        </li>
+        <li class="reveal">
+          <details name="service">
+            <summary>
+              <span class="row"><span class="name">Beard trim</span><span class="dots" aria-hidden="true"></span><span class="time">20 min</span><span class="price">$22</span></span>
+              <span class="desc">Beard shaped and trimmed to length, cheek line and neckline cleaned up, finished with beard oil.</span>
+              <span class="more">What’s included</span>
+            </summary>
+            <div class="inc">
+              <ul>
+                <li>Trim to the length you ask for</li>
+                <li>Cheek line and neckline defined</li>
+                <li>Hot towel</li>
+                <li>Beard oil to finish</li>
+              </ul>
+              <p class="inc-meta">About 20 minutes · <a href="#book">Book this service</a></p>
+            </div>
+          </details>
+        </li>
+        <li class="reveal">
+          <details name="service">
+            <summary>
+              <span class="row"><span class="name">Haircut &amp; beard</span><span class="dots" aria-hidden="true"></span><span class="time">60 min</span><span class="price">$58</span></span>
+              <span class="desc">A full haircut followed by a beard trim, with the same barber, in one booking.</span>
+              <span class="more">What’s included</span>
+            </summary>
+            <div class="inc">
+              <ul>
+                <li>Everything in the Haircut</li>
+                <li>Everything in the Beard trim</li>
+                <li>One booking, one barber, one payment</li>
+              </ul>
+              <p class="inc-meta">About 60 minutes · <a href="#book">Book this service</a></p>
+            </div>
+          </details>
+        </li>
+        <li class="reveal">
+          <details name="service">
+            <summary>
+              <span class="row"><span class="name">Hot towel shave</span><span class="dots" aria-hidden="true"></span><span class="time">40 min</span><span class="price">$45</span></span>
+              <span class="desc">Straight-razor shave of the face and neck with hot towels, lather and aftershave balm.</span>
+              <span class="more">What’s included</span>
+            </summary>
+            <div class="inc">
+              <ul>
+                <li>Hot towel to open the skin</li>
+                <li>Lather and a straight-razor shave of face and neck</li>
+                <li>Cold towel and aftershave balm</li>
+              </ul>
+              <p class="inc-meta">About 40 minutes. Does not include a haircut or beard shaping. · <a href="#book">Book this service</a></p>
+            </div>
+          </details>
+        </li>
+        <li class="reveal">
+          <details name="service">
+            <summary>
+              <span class="row"><span class="name">Kids’ cut, under 12</span><span class="dots" aria-hidden="true"></span><span class="time">25 min</span><span class="price">$28</span></span>
+              <span class="desc">A haircut with neck shave for children under 12. A parent or guardian stays in the shop.</span>
+              <span class="more">What’s included</span>
+            </summary>
+            <div class="inc">
+              <ul>
+                <li>Scissor or clipper cut</li>
+                <li>Neck shave</li>
+                <li>No hot towel or styling product</li>
+              </ul>
+              <p class="inc-meta">About 25 minutes · <a href="#book">Book this service</a></p>
+            </div>
+          </details>
+        </li>
+        <li class="reveal">
+          <details name="service">
+            <summary>
+              <span class="row"><span class="name">Line-up only</span><span class="dots" aria-hidden="true"></span><span class="time">15 min</span><span class="price">$15</span></span>
+              <span class="desc">Edges, neckline and sideburns cleaned up between full cuts. No wash and no styling.</span>
+              <span class="more">What’s included</span>
+            </summary>
+            <div class="inc">
+              <ul>
+                <li>Hairline and edges squared off</li>
+                <li>Neckline and sideburns cleaned up</li>
+                <li>No shampoo, no length cut, no styling</li>
+              </ul>
+              <p class="inc-meta">About 15 minutes · <a href="#book">Book this service</a></p>
+            </div>
+          </details>
+        </li>
+      </ul>
+    </section>
+
+    <!-- THE SHOP -->
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+      <div class="shop-head">
+        <h2 id="shop-title">What to expect before you book.</h2>
+        <p>
+          Four chairs, each with its own mirror, in a room of dark wood and warm
+          light with a radio kept low enough to talk over. These are the
+          practical details that decide most bookings.
+        </p>
+      </div>
+
+      <dl class="facts">
+        <div class="reveal">
+          <dt>Appointments</dt>
+          <dd>Every service is booked ahead for a set time with one barber. Choose the service first, because the length of the slot depends on it.</dd>
+        </div>
+        <div class="reveal">
+          <dt>Walk-ins</dt>
+          <dd>Seated only when a chair is free between booked clients. The booking page shows which chairs are open.</dd>
+        </div>
+        <div class="reveal">
+          <dt>Your first visit</dt>
+          <dd>The consultation is part of your slot, not an extra. Describe what you want, or bring a photo, before the clippers come out.</dd>
+        </div>
+        <div class="reveal">
+          <dt>Running late</dt>
+          <dd>Arrive at your start time. After ten minutes the barber may shorten the service or move you to the next opening.</dd>
+        </div>
+        <div class="reveal">
+          <dt>Cancelling</dt>
+          <dd>Cancel or reschedule at least twelve hours ahead so the slot can go to someone else.</dd>
+        </div>
+        <div class="reveal">
+          <dt>Payment</dt>
+          <dd>Card or cash. Tips can be added by card at the chair.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- GALLERY: each photo opens in a larger view (HTML popover, no JavaScript) -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="gallery-head">
+        <h2 id="gallery-title">Gallery</h2>
+        <p>Select a photo to enlarge it. Press Esc, click outside the photo or use Close to come back.</p>
+      </div>
+
+      <ul class="grid">
+        <li class="reveal g1">
+          <button class="thumb" type="button" popovertarget="photo-1" aria-label="Enlarge photo 1: chairs and mirrors">
+            <span class="slot"><span class="slot-label"><strong>Photo slot 1</strong>Chairs and mirrors</span></span>
+            <span class="enlarge" aria-hidden="true">Enlarge</span>
+          </button>
+        </li>
+        <li class="reveal g2">
+          <button class="thumb" type="button" popovertarget="photo-2" aria-label="Enlarge photo 2: a station up close">
+            <span class="slot"><span class="slot-label"><strong>Photo slot 2</strong>A station up close</span></span>
+            <span class="enlarge" aria-hidden="true">Enlarge</span>
+          </button>
+        </li>
+        <li class="reveal g3">
+          <button class="thumb" type="button" popovertarget="photo-3" aria-label="Enlarge photo 3: the shave setup">
+            <span class="slot"><span class="slot-label"><strong>Photo slot 3</strong>The shave setup</span></span>
+            <span class="enlarge" aria-hidden="true">Enlarge</span>
+          </button>
+        </li>
+        <li class="reveal g4">
+          <button class="thumb" type="button" popovertarget="photo-4" aria-label="Enlarge photo 4: the entrance">
+            <span class="slot"><span class="slot-label"><strong>Photo slot 4</strong>The entrance</span></span>
+            <span class="enlarge" aria-hidden="true">Enlarge</span>
+          </button>
+        </li>
+      </ul>
+
+      <div id="photo-1" class="lightbox" popover role="dialog" aria-label="Photo 1: chairs and mirrors">
+        <button class="close" type="button" popovertarget="photo-1" popovertargetaction="hide" autofocus>Close</button>
+        <div class="slot slot-lb" role="img" aria-label="Photo placeholder: chairs and mirrors"><span class="slot-label"><strong>Photo slot 1</strong>Chairs and mirrors</span></div>
+      </div>
+      <div id="photo-2" class="lightbox" popover role="dialog" aria-label="Photo 2: a station up close">
+        <button class="close" type="button" popovertarget="photo-2" popovertargetaction="hide" autofocus>Close</button>
+        <div class="slot slot-lb" role="img" aria-label="Photo placeholder: a station up close"><span class="slot-label"><strong>Photo slot 2</strong>A station up close</span></div>
+      </div>
+      <div id="photo-3" class="lightbox" popover role="dialog" aria-label="Photo 3: the shave setup">
+        <button class="close" type="button" popovertarget="photo-3" popovertargetaction="hide" autofocus>Close</button>
+        <div class="slot slot-lb" role="img" aria-label="Photo placeholder: the shave setup"><span class="slot-label"><strong>Photo slot 3</strong>The shave setup</span></div>
+      </div>
+      <div id="photo-4" class="lightbox" popover role="dialog" aria-label="Photo 4: the entrance">
+        <button class="close" type="button" popovertarget="photo-4" popovertargetaction="hide" autofocus>Close</button>
+        <div class="slot slot-lb" role="img" aria-label="Photo placeholder: the entrance"><span class="slot-label"><strong>Photo slot 4</strong>The entrance</span></div>
+      </div>
+    </section>
+
+    <!-- VISIT AND BOOK -->
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="visit-info">
+        <h2 id="visit-title">Visit</h2>
+        <address>
+          100 Sample Street<br>
+          McKinney, TX 75069
+        </address>
+        <p class="note">Demo address. No real business operates here.</p>
+
+        <table class="hours">
+          <caption>Hours <span>(example only)</span></caption>
+          <tbody>
+            <tr><th scope="row">Monday</th><td>Closed</td></tr>
+            <tr><th scope="row">Tuesday – Friday</th><td>9 am – 7 pm</td></tr>
+            <tr><th scope="row">Saturday</th><td>8 am – 5 pm</td></tr>
+            <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="book" id="book" aria-labelledby="book-title">
+        <h2 id="book-title">Book an appointment</h2>
+        <p>
+          On a live site this is where the shop’s booking tool would sit: choose
+          a service, pick a time and get a confirmation.
+        </p>
+        <p class="demo-flag">
+          <strong>Demo only.</strong> Online booking is not connected, so
+          nothing on this page creates an appointment.
+        </p>
+        <p>
+          <a class="btn" href="https://example.com/booking-placeholder" target="_blank" rel="noopener">Open booking page (placeholder)</a>
+        </p>
+        <p class="note">The button above is a placeholder link. It opens a generic example page in a new tab.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p class="foot-brand">The Oak <span>&amp;</span> Iron</p>
+    <p>
+      The Oak &amp; Iron Barbershop is a fictional brand created for a design portfolio.
+      The business, address, hours, services and prices on this page are not real.
+    </p>
+    <p><a class="textlink" href="#top">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
